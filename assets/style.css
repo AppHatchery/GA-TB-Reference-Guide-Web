@@ -16,7 +16,7 @@
   --active-tab-text-color: var(--white-color);
   --tab-radius: 5px;
   --tab-box-shadow: 0px 0px 32px 0px rgba(187, 187, 187, 0.25);
-
+  --transition-duration: 350ms;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -36,6 +36,7 @@
     --active-tab-text-color: #F9F9F9;
     --tab-radius: 5px;
     --tab-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
+    --transition-duration: 350ms;
   }
 }
 
@@ -380,6 +381,60 @@ a {
     margin: 0;
 }
 
+/* Keyframes + Animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from { 
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to { 
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes slideInBottom {
+  from { 
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutBottom {
+  from { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to { 
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+}
+
 .tab,
 .tab2,
 .tab3,
@@ -399,6 +454,7 @@ a {
     border: none;
     border-radius: var(--tab-radius);
     box-shadow: var(--tab-box-shadow);
+    transition: all var(--transition-duration) ease-in-out;
 }
 
 .tab.active-tab,
@@ -410,6 +466,7 @@ a {
     color: var(--active-tab-text-color);
     opacity: 1;
     box-shadow: var(--tab-box-shadow);
+    transition: all var(--transition-duration) ease-in-out;
 }
 
 .tab-content,
@@ -424,6 +481,8 @@ a {
   margin: 0;
   margin-top: 32px;
   padding: 0;
+  opacity: 0;
+  /* animation: slideOutRight 500ms ease-in-out forwards; */
 }
 
 .tab-content.active-tab,
@@ -431,6 +490,8 @@ a {
 .tab3-content.active-tab,
 .option-content.active-option {
   display: table;
+  opacity: 1;
+  /* animation: slideInLeft 500ms ease-in-out forwards; */
 }
 
 .highlight {
@@ -439,6 +500,10 @@ a {
 
 th, td {
   vertical-align: middle !important;
+}
+
+td {
+  animation: slideInBottom var(--transition-duration) ease-in-out forwards;
 }
 
 h3.highlight {
