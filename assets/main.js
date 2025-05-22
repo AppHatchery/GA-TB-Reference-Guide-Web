@@ -70,3 +70,13 @@ function switchTable3Tab(tabIndex) {
   document.querySelectorAll('.tab3-content')[tabIndex].classList.add('active-tab');
   console.log("TAB INDEX", tabIndex)
 }
+
+// For Dropdown Togglers
+function toggleItem(clickedTitle) {
+    const itemContent = clickedTitle.nextElementSibling;
+    
+    itemContent.classList.toggle('active');
+
+    const chevronDown = clickedTitle.querySelector('.chevron-down');
+    chevronDown.classList.toggle('active');
+}

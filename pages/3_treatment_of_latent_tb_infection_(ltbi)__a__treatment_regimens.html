@@ -15,15 +15,21 @@
 <body>
 
 <div class="uk-container">
-    <p>
+    <p class="uk-paragraph">
         Treatment regimens for LTBI are outlined in <a
             href="#table4">Table 4</a>. Several
         different LTBI treatment regimens are recommended by CDC.
     </p>
-    <h5>These include:</h5>
+    <p class="uk-paragraph">These include:</p>
 
-    <ul class="uk-list uk-list-decimal">
-        <li><b>Rifampin.</b>Rifampin for 4 months is a preferred CDC treatment regimen for the treatment of LTBI among
+    <ul class="uk-list togglers-list">
+        <li>
+            <b class="toggle-title" onclick="toggleItem(this)">
+                <span>Rifampin</span><span class="chevron-down">↑</span>
+            </b>
+
+            <div class="item">
+            Rifampin for 4 months is a preferred CDC treatment regimen for the treatment of LTBI among
             persons
             presumed to be infected with drug-susceptible TB (INH and
             rifampin susceptible) and is the regimen of choice for the
@@ -45,75 +51,84 @@
             are regularly updated by the U.S. Department of Health and
             Human Services <a
                     href="https://aidsinfo.nih.gov/guidelines/html/4/ adult-and-adolescent-opportunistic-infection/0" class="res-width">(https://aidsinfo.nih.gov/guidelines/html/4/adult-and-adolescent-opportunistic-infection/0)</a>.
+            </div>
         </li>
 
-        <li><b>INH plus Rifapentine (3HP).</b> A short course regimen of
-            weekly INH plus rifapentine for 12 weekly doses is another
-            CDC-preferred regimen for the treatment of LTBI (due to presumed infection with drug-susceptible M.
-            tuberculosis) in
-            adults as well as children > 2 years of age. In 2011, CDC first
-            recommended 3HP for the treatment of LTBI and that it be
-            by directly observed therapy [DOT]. However, based on
-            recent studies and updated data, CDC revised guidelines for
-            the use of 3HP in 2018 and expanded the patient populations
-            for which this regimen could be used and included an option
-            for self-administration of the 3HP regimen. CDC recommendations for 3HP in the treatment of LTBI include:
-            <ul class="uk-list uk-list-disc">
-                <li>use of 3HP in adults and persons aged 2–17 years with
-                    LTBI;
-                </li>
-                <li>use of 3HP in persons who are living with HIV with
-                    LTBI including those with AIDS and taking antiretroviral medications with acceptable drug-drug
-                    interactions with rifapentine* [the 2021 DHHS guidelines on treatment of HIV among adults and 
-                    adolescents indicate that rifapentine as part of a 3HP regimen is acceptable to use among persons 
-                    living with HIV on and ART regimen that includes once daily dolutegravir]; and
-                </li>
-                <li>
-                    use of 3HP by directly observed therapy (DOT) or self-administered 
-                    therapy (SAT) in persons aged ≥ 2
-                    years. Per CDC recommendations, “the health care
-                    provider should choose the mode of administration
-                    (DOT versus SAT) based on local practice, individual
-                    patient attributes and preferences, and other considerations, including risk for progression to
-                    severe
-                    forms of TB disease” (MMWR 2018; 67:723-72).
-
-                </li>
-            </ul>
-            The 3HP is regimen is NOT recommended for pregnant
-            women, children < 2 years old, persons living with HIV who
-            are on antiretroviral drugs that have significant drug-drug interactions with rifapentine, or patients
-            infected with suspected INH-resistant, rifampin-resistant, or MDR isolates.
-            Other potential challenges in using the 3HP regimen in addition to the drug-drug interactions due to
-            rifapentine (similar
-            to those seen with other rifamycin drugs such as rifampin)
-            include cost of medications that are greater than most alternatives; the need to take numerous pills
-            simultaneously (10
-            pills once weekly compared with two or three pills daily for
-            other regimens for most adults); and the association with a
-            systemic drug reaction or influenza-like syndrome that can
-            include syncope and hypotension (although the risk of hospitalization is low, 0.1% in published studies).
+        <li><b class="toggle-title" onclick="toggleItem(this)"><span>INH plus Rifapentine (3HP)</span> <span class="chevron-down">↑</span></b>
+            <div class="item">
+                <p>A short course regimen of weekly INH plus rifapentine for 12 weekly doses is another CDC-preferred regimen for the treatment of LTBI (due to presumed infection with drug-susceptible M.
+                    tuberculosis) in adults as well as children > 2 years of age. In 2011, CDC first recommended 3HP for the treatment of LTBI and that it be
+                    by directly observed therapy [DOT]. However, based on
+                    recent studies and updated data, CDC revised guidelines for
+                    the use of 3HP in 2018 and expanded the patient populations
+                    for which this regimen could be used and included an option
+                    for self-administration of the 3HP regimen. CDC recommendations for 3HP in the treatment of LTBI include:</p>
+                    <ul class="uk-list uk-list-disc">
+                        <li>use of 3HP in adults and persons aged 2–17 years with
+                            LTBI;
+                        </li>
+                        <li>use of 3HP in persons who are living with HIV with
+                            LTBI including those with AIDS and taking antiretroviral medications with acceptable drug-drug
+                            interactions with rifapentine* [the 2021 DHHS guidelines on treatment of HIV among adults and 
+                            adolescents indicate that rifapentine as part of a 3HP regimen is acceptable to use among persons 
+                            living with HIV on and ART regimen that includes once daily dolutegravir]; and
+                        </li>
+                        <li>
+                            use of 3HP by directly observed therapy (DOT) or self-administered 
+                            therapy (SAT) in persons aged ≥ 2
+                            years. Per CDC recommendations, “the health care
+                            provider should choose the mode of administration
+                            (DOT versus SAT) based on local practice, individual
+                            patient attributes and preferences, and other considerations, including risk for progression to
+                            severe
+                            forms of TB disease” (MMWR 2018; 67:723-72).
+        
+                        </li>
+                    </ul>
+                    <p>
+                        The 3HP is regimen is NOT recommended for pregnant
+                        women, children < 2 years old, persons living with HIV who
+                        are on antiretroviral drugs that have significant drug-drug interactions with rifapentine, or patients
+                        infected with suspected INH-resistant, rifampin-resistant, or MDR isolates.
+                        Other potential challenges in using the 3HP regimen in addition to the drug-drug interactions due to
+                        rifapentine (similar
+                        to those seen with other rifamycin drugs such as rifampin)
+                        include cost of medications that are greater than most alternatives; the need to take numerous pills
+                        simultaneously (10
+                        pills once weekly compared with two or three pills daily for
+                        other regimens for most adults); and the association with a
+                        systemic drug reaction or influenza-like syndrome that can
+                        include syncope and hypotension (although the risk of hospitalization is low, 0.1% in published studies).
+                    </p>
+            </div>
         </li>
 
-        <li><b>Isoniazid (INH).</b> In the CDC 2020 LTBI treatment guidelines, 6 or 9 months of daily INH is a
-            recommended alternative regimen for the treatment of LTBI (due to presumed
-            infection with drug susceptible M. tuberculosis) as shown in
-            <a href="#table4">Table 4</a>. A regimen of 6 months of daily INH is strongly recommended for HIV-negative adults and children of
-            all ages
-            and conditionally recommended for HIV-positive adults and
-            children of all ages; INH daily for 9 months is conditionally
-            recommended for adults and children of all ages, both HIV-seronegative and HIV-positive. One practical approach
-            for the
-            use of INH for LTBI is to aim for a 9 month regimen with the
-            goal of completion of at least 6 months. INH can be given
-            daily (e.g., by self-administered therapy) or twice weekly (if
-            given by directly observed therapy) as outlined in <a href="#table5">Table 5</a>.
-            INH should be used for the treatment of LTBI when there
-            are serious potential drug-drug interactions with rifampin
-            or other rifamycins.
+        <li><b class="toggle-title" onclick="toggleItem(this)"><span>Isoniazid (INH)</span> <span class="chevron-down">↑</span></b>
+            <div class="item">
+                <p>
+                    In the CDC 2020 LTBI treatment guidelines, 6 or 9 months of daily INH is a
+                    recommended alternative regimen for the treatment of LTBI (due to presumed
+                    infection with drug susceptible M. tuberculosis) as shown in
+                    <a href="#table4">Table 4</a>. A regimen of 6 months of daily INH is strongly recommended for HIV-negative adults and children of
+                    all ages
+                    and conditionally recommended for HIV-positive adults and
+                    children of all ages; INH daily for 9 months is conditionally
+                    recommended for adults and children of all ages, both HIV-seronegative and HIV-positive. One practical approach
+                    for the
+                    use of INH for LTBI is to aim for a 9 month regimen with the
+                    goal of completion of at least 6 months. INH can be given
+                    daily (e.g., by self-administered therapy) or twice weekly (if
+                    given by directly observed therapy) as outlined in <a href="#table5">Table 5</a>.
+                    INH should be used for the treatment of LTBI when there
+                    are serious potential drug-drug interactions with rifampin
+                    or other rifamycins.
+                </p>
+            </div>
         </li>
 
-        <li><b>Isoniazid (INH) plus Rifampin.</b> A regimen of 3 months of
+        <li><b class="toggle-title" onclick="toggleItem(this)"><span>Isoniazid (INH) plus Rifampin</span> <span class="chevron-down">↑</span></b>
+            <div class="item">
+            A regimen of 3 months of
             daily INH plus daily rifampin is a CDC conditionally recommended regimen for the treatment of LTBI in adults
             and
             children of all ages. Because this regimen contains rifampin,
@@ -121,10 +136,11 @@
             drug-drug
             interactions that would prohibit the use of this regimen (as
             discussed above for rifampin).
+            </div>
         </li>
-    </ul>
+    </ul>   
 
-    <h4 id="table4">Table 4. Recommendations for regimens to treat latent tuberculosis infection</h4>
+    <h4 id="table4" class="custom-table-title">Table 4. Recommendations for regimens to treat latent tuberculosis infection</h4>
 
     <div id="table_4_recommendations_for_regimens_to_treat_latent_tuberculosis_infection" class="uk-overflow-auto">
         <div class="uk-tabs-container">
@@ -193,7 +209,7 @@
         regimen (e.g., due to drug intolerability or drug-drug interactions).
     </p>
 
-    <h4 id="table5">Table 5. Dosages for Recommended LTBI Treatment Regimens</h4>
+    <h4 id="table5" class="custom-table-title">Table 5. Dosages for Recommended LTBI Treatment Regimens</h4>
 
     <div class="uk-overflow-auto" id="table_5_dosages_for_recommended_lbti_treatment_regimens">
 
@@ -349,7 +365,7 @@
         Adapted from MMWR Recomm Rep 2020; 69(1):1-11.
     </p>
 
-    <h4 id="table6">Table 6. LTBI Treatment Drug Adverse Reactions</h4>
+    <h4 id="table6" class="custom-table-title">Table 6. LTBI Treatment Drug Adverse Reactions</h4>
     <div class="uk-overflow-auto" id="table_6_ltbi_treatment_drug_adverse_reactions">
         <div class="uk-tabs-container">
             <ul class="tabs">
