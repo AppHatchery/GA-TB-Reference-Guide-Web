@@ -23,7 +23,7 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  /* :root {
+  :root {
     --primary-color: #7090FD;
     --white-color: #FFFFFF;
     --yellow-color: #FFC107;
@@ -43,7 +43,7 @@
     --tab-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
     --transition-duration: 500ms;
     --list-title-color: var(--yellow-color);
-  } */
+  }
 }
 
 html {
