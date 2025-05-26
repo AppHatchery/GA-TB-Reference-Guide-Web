@@ -42,9 +42,9 @@
     <div class="uk-overflow-auto">
         <div class="uk-tabs-container">
             <ul class="tabs">
-                <li><button class="tab active-tab" onclick="switchTab(0)">Positive</button></li>
-                <li><button class="tab" onclick="switchTab(1)">Negative</button></li>
-                <li><button class="tab" onclick="switchTab(2)">Indeterminate</button></li>
+                <li><button class="tab active-tab" onclick="switchTab(0, event)">Positive</button></li>
+                <li><button class="tab" onclick="switchTab(1, event)">Negative</button></li>
+                <li><button class="tab" onclick="switchTab(2, event)">Indeterminate</button></li>
             </ul>
         </div>
 
@@ -141,10 +141,10 @@
     <div class="uk-overflow-auto" id="table2">
         <div class="uk-tabs-container">
             <ul class="tabs">
-                <li><button class="tab-button active-option" onclick="switchOption(0)">Positive</button></li>
-                <li><button class="tab-button" onclick="switchOption(1)">Borderline</button></li>
-                <li><button class="tab-button" onclick="switchOption(2)">Negative</button></li>
-                <li><button class="tab-button" onclick="switchOption(3)">Invalid</button></li>
+                <li><button class="tab-button active-option" onclick="switchTab(0, event)">Positive</button></li>
+                <li><button class="tab-button" onclick="switchTab(1, event)">Borderline</button></li>
+                <li><button class="tab-button" onclick="switchTab(2, event)">Negative</button></li>
+                <li><button class="tab-button" onclick="switchTab(3, event)">Invalid</button></li>
             </ul>
         </div>
 

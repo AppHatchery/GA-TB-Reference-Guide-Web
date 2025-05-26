@@ -468,8 +468,6 @@ a {
 }
 
 .tab,
-.tab2,
-.tab3,
 .tab-button {
     display: inline-flex;
     justify-items: center;
@@ -486,24 +484,20 @@ a {
     border: none;
     border-radius: var(--tab-radius);
     box-shadow: var(--tab-box-shadow);
-    transition: all var(--transition-duration) ease-in-out;
+    transition: background-color var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out;
 }
 
 .tab.active-tab,
-.tab2.active-tab,
-.tab3.active-tab,
 .tab-button.active-option,
 .option.active-option {
     background-color: var(--active-tab-color);
     color: var(--active-tab-text-color);
     opacity: 1;
     box-shadow: var(--tab-box-shadow);
-    transition: all var(--transition-duration) ease-in-out;
+    transition: background-color var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out;
 }
 
 .tab-content,
-.tab2-content,
-.tab3-content,
 .option-content {
   display: none;
   border: none;
@@ -517,8 +511,6 @@ a {
 }
 
 .tab-content.active-tab,
-.tab2-content.active-tab,
-.tab3-content.active-tab,
 .option-content.active-option {
   display: table;
   opacity: 1;
