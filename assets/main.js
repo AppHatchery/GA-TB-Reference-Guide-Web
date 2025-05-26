@@ -72,6 +72,6 @@ function toggleItem(clickedTitle) {
     
     itemContent.classList.toggle('active');
 
-    const chevronDown = clickedTitle.querySelector('.chevron-down');
-    chevronDown.classList.toggle('active');
+    const chevronUp = clickedTitle.querySelector('.chevron-up');
+    chevronUp.classList.toggle('active');
 }
