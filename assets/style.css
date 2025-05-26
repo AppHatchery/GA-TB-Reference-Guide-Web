@@ -592,13 +592,13 @@ h3.highlight {
 
 .uk-list-title::before,
 .custom-table-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 8px;
-    height: 100%;
-    border-radius: 4px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.6em;
+  width: 8px;
+  border-radius: 4px;
 }
 
 .uk-list-title::before {
@@ -646,10 +646,10 @@ h3.highlight {
 .item {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: max-height 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .item.active {
   max-height: 5000px;
-  transition: max-height 1500ms cubic-bezier(0.4, 0, 1, 1);
+  transition: max-height 800ms cubic-bezier(0.4, 0, 1, 1);
 }
