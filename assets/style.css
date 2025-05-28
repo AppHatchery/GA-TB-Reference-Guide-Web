@@ -469,8 +469,10 @@ a {
 
 .tab,
 .tab-button {
-    display: inline-flex;
+    display: inline-block;
     justify-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
     padding: 16px;
     text-align: center;
@@ -478,13 +480,13 @@ a {
     font-size: 16px;
     background-color: var(--inactive-tab-color);
     color: var(--inactive-tab-text-color);
-    opacity: 0.75;
     text-transform: capitalize;
     cursor: pointer;
     border: none;
     border-radius: var(--tab-radius);
     box-shadow: var(--tab-box-shadow);
-    transition: background-color var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out;
+    width: 200px;
+    max-height: 100px;
 }
 
 .tab.active-tab,
@@ -492,9 +494,7 @@ a {
 .option.active-option {
     background-color: var(--active-tab-color);
     color: var(--active-tab-text-color);
-    opacity: 1;
     box-shadow: var(--tab-box-shadow);
-    transition: background-color var(--transition-duration) ease-in-out, color var(--transition-duration) ease-in-out;
 }
 
 .tab-content,
@@ -621,15 +621,6 @@ h3.highlight {
   z-index: 10;
   background-color: var(--background-color);
   padding: 14px 0;
-}
-
-.toggle-title::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.2s ease;
 }
 
 .chevron-up {
