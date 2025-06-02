@@ -141,6 +141,7 @@ html {
 
 body {
   margin: 0;
+  line-height: 1.7;
 }
 
 a:active,
@@ -485,7 +486,7 @@ a {
     border: none;
     border-radius: var(--tab-radius);
     box-shadow: var(--tab-box-shadow);
-    width: 200px;
+    width: 150px;
     height: 100%;
     box-sizing: border-box;
 }
