@@ -190,6 +190,12 @@ img {
   object-fit: contain;
 }
 
+.ic_title_icon {
+    height: 50px !important;
+    width: 50px !important;
+    object-fit: none !important;
+}
+
 /* ========================================================================
    Component: Table
  ========================================================================== */
