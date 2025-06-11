@@ -142,6 +142,8 @@ html {
 body {
   margin: 0;
   line-height: 1.7;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 a:active,
@@ -175,6 +177,11 @@ strong {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--titles-color);
+}
+
+ul {
+  list-style: disc;
+  font-style: normal !important;
 }
 
 /* ========================================================================
@@ -433,8 +440,8 @@ table, td, th {
 }
 
 a {
-    font-style: italic;
-    text-decoration: none !important;
+    font-style: normal;
+    text-decoration: underline !important;
     color: var(--link-color) !important;
 }
 
@@ -563,7 +570,7 @@ h3.highlight {
 
 .uk-list {
     padding-left: 1.5rem;
-    list-style: none;
+    font-style: normal;
 }
 
 .uk-list.togglers-list {
