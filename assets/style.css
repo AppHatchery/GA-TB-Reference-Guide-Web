@@ -193,7 +193,7 @@ img {
 .ic_title_icon {
     height: 50px !important;
     width: 50px !important;
-    object-fit: none !important;
+    object-fit: fill !important;
 }
 
 /* ========================================================================
