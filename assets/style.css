@@ -184,6 +184,12 @@ ul {
   font-style: normal !important;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 /* ========================================================================
    Component: Table
  ========================================================================== */
@@ -445,8 +451,6 @@ a {
     color: var(--link-color) !important;
 }
 
-
-
 .uk-table th {
     padding: 1rem 0.75rem;
     text-align: left;
@@ -460,6 +464,9 @@ a {
 .uk-table td {
   color: var(--body-color-secondary);
 }
+
+
+/* Tabs */
 
 .uk-tabs-container .tabs {
     display: flex;
@@ -493,7 +500,7 @@ a {
     border: none;
     border-radius: var(--tab-radius);
     box-shadow: var(--tab-box-shadow);
-    width: 150px;
+    max-width: 150px;
     height: 100%;
     box-sizing: border-box;
 }
