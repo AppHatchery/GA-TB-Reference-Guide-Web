@@ -464,7 +464,7 @@ a {
     font-size: 1rem;
     font-weight: bold;
     color: var(--table-title-color);
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .uk-table td {
