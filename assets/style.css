@@ -608,12 +608,14 @@ h3.highlight {
 }
 
 .uk-list-title,
+.uk-table-title,
 .custom-table-title {
     position: relative;
     padding-left: 1.5rem;
 }
 
 .uk-list-title::before,
+.uk-table-title::before,
 .custom-table-title::before {
   content: "";
   position: absolute;
