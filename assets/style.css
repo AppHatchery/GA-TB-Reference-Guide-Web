@@ -190,10 +190,39 @@ img {
   object-fit: contain;
 }
 
+.ic_chapter_icon {
+  height: 24px !important;
+  width: 24px !important;
+  object-fit: fill !important;
+}
+
 .ic_title_icon {
     height: 50px !important;
     width: 50px !important;
     object-fit: fill !important;
+}
+
+.chapter-header {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.header-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.chapter-header .last-updated {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: -0.408px;
+  margin-top: 0;
 }
 
 /* ========================================================================
