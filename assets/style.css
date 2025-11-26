@@ -743,7 +743,7 @@ h3.highlight {
 }
 
 .with-info-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.25rem;
   z-index: 1000;
@@ -791,7 +791,8 @@ h3.highlight {
   
   left: 0px;
   width: max-content;
-  max-width: 350px;
+  max-width: calc(100% + 200px);
+  /* max-width: 300px; */
 }
 
 /* Tooltip arrow */
