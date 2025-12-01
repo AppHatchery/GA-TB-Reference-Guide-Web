@@ -5577,7 +5577,7 @@ ul.uk-nav-sub {
 /* Divider modifier
  ========================================================================== */
 /*
- * Set gutter 
+ * Set gutter
  */
 .uk-subnav-divider {
   margin-left: -41px;
@@ -7963,6 +7963,7 @@ iframe.uk-cover {
 .uk-overflow-auto {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  padding: 2rem 0;
 }
 .uk-overflow-auto > :last-child {
   margin-bottom: 0;
