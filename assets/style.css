@@ -405,48 +405,7 @@ hr {
 .uk-table-small .uk-table-link > a {
   padding: 0.625rem 0.75rem;
 }
-/* Responsive table
- ========================================================================== */
-/* Phone landscape and smaller */
-@media (max-width: 959px) {
-  .uk-table-responsive,
-  .uk-table-responsive tbody,
-  .uk-table-responsive th,
-  .uk-table-responsive td,
-  .uk-table-responsive tr {
-    display: block;
-  }
-  .uk-table-responsive thead {
-    display: none;
-  }
-  .uk-table-responsive th,
-  .uk-table-responsive td {
-    width: auto !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    overflow: visible !important;
-    white-space: normal !important;
-  }
-  .uk-table-responsive th:not(:first-child):not(.uk-table-link),
-  .uk-table-responsive td:not(:first-child):not(.uk-table-link),
-  .uk-table-responsive .uk-table-link:not(:first-child) > a {
-    padding-top: 5px !important;
-  }
-  .uk-table-responsive th:not(:last-child):not(.uk-table-link),
-  .uk-table-responsive td:not(:last-child):not(.uk-table-link),
-  .uk-table-responsive .uk-table-link:not(:last-child) > a {
-    padding-bottom: 5px !important;
-  }
-  .uk-table-justify.uk-table-responsive th,
-  .uk-table-justify.uk-table-responsive td {
-    padding-left: 0;
-    padding-right: 0;
-  }
 
-  .uk-tabs-container .tabs {
-    justify-content: center !important; /* Center tabs on small screens */
-  }
-}
 .uk-table tbody tr {
   transition: background-color 0.1s linear;
 }
@@ -787,7 +746,8 @@ h3.highlight {
   pointer-events: none;
   white-space: normal;
   word-wrap: break-word;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   left: 0px;
   width: max-content;
   max-width: calc(100% + 200px);
@@ -811,4 +771,59 @@ h3.highlight {
   visibility: visible;
   opacity: 1;
   overflow: scroll;
+}
+
+/* Responsive table
+ ========================================================================== */
+/* Phone landscape and smaller */
+@media (max-width: 959px) {
+  .uk-table-responsive,
+  .uk-table-responsive tbody,
+  .uk-table-responsive th,
+  .uk-table-responsive td,
+  .uk-table-responsive tr {
+    display: block;
+  }
+  .uk-table-responsive thead {
+    display: none;
+  }
+  .uk-table-responsive th,
+  .uk-table-responsive td {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+  .uk-table-responsive th:not(:first-child):not(.uk-table-link),
+  .uk-table-responsive td:not(:first-child):not(.uk-table-link),
+  .uk-table-responsive .uk-table-link:not(:first-child) > a {
+    padding-top: 5px !important;
+  }
+  .uk-table-responsive th:not(:last-child):not(.uk-table-link),
+  .uk-table-responsive td:not(:last-child):not(.uk-table-link),
+  .uk-table-responsive .uk-table-link:not(:last-child) > a {
+    padding-bottom: 5px !important;
+  }
+  .uk-table-justify.uk-table-responsive th,
+  .uk-table-justify.uk-table-responsive td {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .uk-tabs-container .tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    /* justify-items: center; */
+    align-content: center;
+    width: 100%;
+  }
+
+  .tab,
+  .tab-button {
+    display: inline-block;
+    width: 100%;
+  }
 }
