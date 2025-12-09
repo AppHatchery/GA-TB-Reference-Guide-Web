@@ -128,8 +128,8 @@
     <div id="table_4_recommendations_for_regimens_to_treat_latent_tuberculosis_infection" class="uk-overflow-auto">
         <div class="uk-tabs-container">
             <ul class="tabs">
-                <li><button class="tab active-tab" onclick="switchTab(0, event)">Preferred</button></li>
-                <li><button class="tab" onclick="switchTab(1, event)">Alternative</button></li>
+                <li><button class="tab active-tab" onclick="switchTab(0, event)">Preferred¹</button></li>
+                <li><button class="tab" onclick="switchTab(1, event)">Alternative²</button></li>
             </ul>
         </div>
 
@@ -137,9 +137,15 @@
             <tbody>
                 <tr>
                     <th>Regimes</th>
-                    <td>3 months isoniazid plus rifapentine given once weekly</td>
-                    <td>4 months rifampin given daily</td>
-                    <td>3 months isoniazid plus rifampin given daily</td>
+                    <td>3 months isoniazid plus rifapentine</td>
+                    <td>4 months rifampin</td>
+                    <td>3 months isoniazid plus rifampin</td>
+                </tr>
+                <tr>
+                    <th>Frequency</th>
+                    <td>Once weekly</td>
+                    <td>Daily</td>
+                    <td>Daily</td>
                 </tr>
                 <tr>
                     <th>Recommendation (Strong or Conditional)</th>
@@ -150,8 +156,8 @@
                 <tr>
                     <th>Evidence (High, Moderate, Low, or Very Low)</th>
                     <td>Moderate</td>
-                    <td>Moderate (HIV negative) † </td>
-                    <td>Very low (HIV negative) † </td>
+                    <td>Moderate (HIV negative) <span class="info-icon" data-tooltip="NOTE: No evidence reported in HIV-positive persons." data-tooltip-position="tooltip-left">i</span> </td>
+                    <td>Very low (HIV negative) / Low (HIV positive) <span class="info-icon" data-tooltip="NOTE: No evidence reported in HIV-positive persons." data-tooltip-position="tooltip-left">i</span> </td>
                 </tr>
             </tbody>
         </table>
@@ -160,13 +166,19 @@
             <tbody>
                 <tr>
                     <th>Regimes</th>
-                    <td>6 months isoniazid given daily</td>
-                    <td>9 months isoniazid given daily</td>
-                    <td>3 months isoniazid plus rifampin given daily</td>
+                    <td>6 months isoniazid</td>
+                    <td>6 months isoniazid</td>
+                    <td>9 months isoniazid</td>
+                </tr>
+                <tr>
+                    <th>Frequency</th>
+                    <td>Daily</td>
+                    <td>Daily</td>
+                    <td>Daily</td>
                 </tr>
                 <tr>
                     <th>Recommendation (Strong or Conditional)</th>
-                    <td>Strong &sect;</td>
+                    <td>Strong <span class="info-icon" data-tooltip="NOTE: Strong recommendation for those persons unable to take a preferred regimen (e.g., due to drug intolerability or drug-drug interactions)." data-tooltip-position="tooltip-center">i</span></td>
                     <td>Conditional</td>
                     <td>Conditional</td>
                 </tr>
@@ -178,19 +190,11 @@
                 </tr>
             </tbody>
         </table>
-
-
     </div>
-
-    <p>Abbreviation: HIV = human immunodeficiency virus <br>
-        <i>* Preferred: excellent tolerability and efficacy, shorter treatment duration,
-            higher completion rates than longer regimens, and therefore higher
-            effectiveness. Alternative: excellent efficacy but concerns regarding longer
-            treatment duration, lower completion rates, and therefore lower effectiveness.
-        </i> <br>† No evidence reported in HIV-positive persons. <br>
-        § Strong recommendation for those persons unable to take a preferred
-        regimen (e.g., due to drug intolerability or drug-drug interactions).
-    </p>
+    
+    <p>Abbreviation: HIV = human immunodeficiency virus</p>
+    <p>1. Preferred: excellent tolerability and efficacy, shorter treatment duration, higher completion rates than longer regimens, and therefore higher effectiveness. <br>
+        2. Alternative: excellent efficacy but concerns regarding longer treatment duration, lower completion rates, and therefore lower effectiveness. </p>
 
     <h4 id="table5" class="custom-table-title">Table 5. Dosages for Recommended LTBI Treatment Regimens</h4>
 
@@ -198,14 +202,14 @@
 
         <div class="uk-tabs-container">
             <ul class="tabs">
-                <li><button class="tab active-tab" onclick="switchTab(0, event)">Isoniazid and Rifapentine</button></li>
-                <li><button class="tab" onclick="switchTab(1, event)">Rifampin</button></li>
-                <li><button class="tab" onclick="switchTab(2, event)">Isoniazid and Rifampin</button></li>
+                <li><button class="tab active-tab" onclick="switchTab(0, event)">Isoniazid¹ and Rifapentine²</button></li>
+                <li><button class="tab" onclick="switchTab(1, event)">Rifampin³</button></li>
+                <li><button class="tab" onclick="switchTab(2, event)">Isoniazid¹ and Rifampin³</button></li>
                 <li><button class="tab" onclick="switchTab(3, event)">Isoniazid</button></li>
             </ul>
         </div>
 
-        <table id="tab-content2" class="uk-table uk-table-small tab-content active-tab">
+        <table id="tab-content0" class="uk-table uk-table-small tab-content active-tab">
             <tbody>
                 <tr>
                     <th>Duration</th>
@@ -214,7 +218,7 @@
                 <tr>
                     <th>Dosage And Age Group</th>
                     <td>
-                        <strong class="highlight">Adults and children aged ≥ 12 yrs</strong><br>
+                        <strong class="highlight">Adults and children aged > 12 yrs</strong><br>
                         <strong>Isoniazid:</strong><br>
                         15 mg/kg rounded up to the nearest 50 or 100 mg; 900 mg maximum<br>
                         <strong>Rifapentine:</strong><br>
@@ -225,8 +229,8 @@
                         > 50.0 kg, 900 mg maximum <br>
                         <br>
                         <strong class="highlight">Children aged 2 - 11 yrs</strong><br>
-                        <strong>Isoniazid*</strong>: <br> 25 mg/kg; 900 mg maximum<br>
-                        <strong>Rifapentine†</strong>: <br>
+                        <strong class="with-info-icon">Isoniazid <span class="info-icon" data-tooltip="NOTE: Isoniazid is formulated as 100-mg and 300-mg tablets.">i</span></strong>: <br> 25 mg/kg; 900 mg maximum<br>
+                        <strong class="with-info-icon">Rifapentine <span class="info-icon" data-tooltip="NOTE: Rifapentine is formulated as 150-mg tablets in blister packs that should be kept sealed until use.">i</span></strong>: <br>
                         see above <br>
                     </td>
                 </tr>
@@ -241,7 +245,7 @@
             </tbody>
         </table>
 
-        <table id="tab-content3" class="uk-table uk-table-small tab-content">
+        <table id="tab-content1" class="uk-table uk-table-small tab-content">
             <tbody>
                 <tr>
                     <th>Duration</th>
@@ -251,11 +255,11 @@
                     <th>Dosage And Age Group</th>
                     <td>
                         <strong>Adults</strong>: 10 mg/kg<br>
-                        <strong>Children</strong>: 15 - 20 mg/kg**<br>
+                        <strong>Children</strong>: 15 - 20 mg/kg <span class="info-icon" data-tooltip="NOTE: The American Academy of Pediatrics acknowledges that some experts use rifampin at 20 - 30 mg/kg for the daily regimen when prescribing for infants and toddlers. (Source: American Academy of Pediatrics. Tuberculosis. In: Kimberlin DW, Brady MT, Jackson MA, Long SS, eds. Red Book: 2018 Report of the Committee on Infectious Diseases. 31st ed. Itasca, IL: American Academy of Pediatrics; 2018:829-53)." data-tooltip-position="tooltip-left">i</span><br>
                         <strong>Maximum dose</strong>: 600 mg<br>
                     </td>
                 </tr>
-                <tr>
+                <tr> 
                     <th>Frequency</th>
                     <td>Daily</td>
                 </tr>
@@ -266,7 +270,7 @@
             </tbody>
         </table>
 
-        <table id="tab-content4" class="uk-table uk-table-small tab-content">
+        <table id="tab-content2" class="uk-table uk-table-small tab-content">
             <tbody>
                 <tr>
                     <th>Duration</th>
@@ -276,11 +280,11 @@
                     <th>Dosage And Age Group</th>
                     <td>
                         <strong class="highlight">Adults </strong> <br>
-                        <strong>Isoniazid*</strong>: <br> 5 mg/kg; 300 mg maximum <br>
-                        <strong>Rifampin¶</strong>: <br> 10 mg/kg; 600 mg maximum <br><br>
+                        <strong>Isoniazid <span class="info-icon" data-tooltip="NOTE: Isoniazid is formulated as 100-mg and 300-mg tablets." data-tooltip-position="tooltip-left">i</span></strong>: <br> 5 mg/kg; 300 mg maximum <br>
+                        <strong>Rifampin <span class="info-icon" data-tooltip="NOTE: Rifampin (rifampicin) is formulated as 150-mg and 300-mg capsules." data-tooltip-position="tooltip-left">i</span></strong>: <br> 10 mg/kg; 600 mg maximum <br><br>
                         <strong class="highlight">Children</strong>: <br>
-                        <strong>Isoniazid*</strong>: <br> 10 - 20 mg/kg†† ; 300 mg maximum <br>
-                        <strong>Rifampin¶</strong>: <br> 15 - 20 mg/kg; 600 mg maximum <br>
+                        <strong>Isoniazid <span class="info-icon" data-tooltip="NOTE: Isoniazid is formulated as 100-mg and 300-mg tablets." data-tooltip-position="tooltip-left">i</span></strong>: <br> 10 - 20 mg/kg <span class="info-icon" data-tooltip="NOTE: The American Academy of Pediatrics recommends an isoniazid dosage of 10 - 15 mg/kg for the daily regimen. Adapted from MMWR Recomm Rep 2020; 69(1):1-11.">i</span> ; 300 mg maximum <br>
+                        <strong>Rifampin <span class="info-icon" data-tooltip="NOTE: Rifampin (rifampicin) is formulated as 150-mg and 300-mg capsules." data-tooltip-position="tooltip-left">i</span></strong>: <br> 15 - 20 mg/kg; 600 mg maximum <br>
                     </td>
                 </tr>
                 <tr>
@@ -294,7 +298,7 @@
             </tbody>
         </table>
 
-        <table id="tab-content5" class="uk-table uk-table-small tab-content">
+        <table id="tab-content3" class="uk-table uk-table-small tab-content">
             <tbody>
                 <tr>
                     <th>Duration</th>
@@ -305,12 +309,12 @@
                     <th>Dosage And Age Group</th>
                     <td>
                         <strong>Adults</strong>: <br> 5 mg/kg <br>
-                        <strong>Children</strong>: <br> 10 - 20 mg/kg†† <br>
+                        <strong>Children</strong>: <br> 10 - 20 mg/kg <span class="info-icon" data-tooltip="NOTE: The American Academy of Pediatrics recommends an isoniazid dosage of 10 - 15 mg/kg for the daily regimen.  Adapted from MMWR Recomm Rep 2020; 69(1):1-11.">i</span> <br>
                         <strong>Maximum dose</strong>: <br> 300 mg <br>
                     </td>
                     <td>
                         <strong>Adults</strong>: <br> 5 mg/kg <br>
-                        <strong>Children</strong>: <br> 10 - 20 mg/kg†† <br>
+                        <strong>Children</strong>: <br> 10 - 20 mg/kg <span class="info-icon" data-tooltip="NOTE: The American Academy of Pediatrics recommends an isoniazid dosage of 10 - 15 mg/kg for the daily regimen.  Adapted from MMWR Recomm Rep 2020; 69(1):1-11.">i</span> <br>
                         <strong>Maximum dose</strong>: <br> 300 mg <br>
                     </td>
                 </tr>
@@ -328,8 +332,10 @@
         </table>
     </div>
 
-     <p>
-        * Isoniazid is formulated as 100-mg and 300-mg tablets. † Rifapentine is formulated as 150-mg tablets in blister packs that should be kept sealed until use. Rifapentine should not be used for children &lt2 years of age due to lack of pharmacokinetic data.¶ Rifampin (rifampicin) is formulated as 150-mg and 300-mg capsules.   ** The American Academy of Pediatrics acknowledges that some experts use rifampin at 20 - 30 mg/kg for the daily regimen when prescribing for infants and toddlers. (Source: American Academy of Pediatrics. Tuberculosis. In: Kimberlin DW, Brady MT, Jackson MA, Long SS, eds. Red Book: 2018 Report of the Committee on Infectious Diseases. 31st ed. Itasca, IL: American Academy of Pediatrics; 2018:829-53). †† The American Academy of Pediatrics recommends an isoniazid dosage of 10 - 15 mg/kg for the daily regimen. Adapted from MMWR Recomm Rep 2020; 69(1):1-11.
+    <p>
+        1. Isoniazid is formulated as 100-mg and 300-mg tablets.<br>
+        2. Rifapentine is formulated as 150-mg tablets in blister packs that should be kept sealed until use. Rifapentine should not be used for children <2 years of age due to lack of pharmacokinetic data.<br>
+        3. Rifampin (rifampicin) is formulated as 150-mg and 300-mg capsules.
     </p>
 
     <h4 id="table6" class="custom-table-title">Table 6. LTBI Treatment Drug Adverse Reactions</h4>
@@ -342,7 +348,7 @@
             </ul>
         </div>
 
-        <table id="tab-content6" class="uk-table uk-table-small tab-content active-tab">
+         <table id="tab-content0" class="uk-table uk-table-small tab-content active-tab">
             <tbody>
                 <tr>
                     <th>Adverse Reactions</th>
@@ -355,7 +361,25 @@
                         Monitoring
                     </th>
                     <td>
-                        Order baseline hepatic chemistry blood tests (at least AST or ALT) for patients with specific conditions: Living with HIV, liver disorders, postpartum period (&lt3 months after delivery), regular alcohol use, injection drug use, or use of medications with known possible interactions. [Some clinicians prefer to obtain baseline tests on all adults]. Repeat measurements if: * baseline results are abnormal * client is at high-risk for adverse reactions * client has symptoms of adverse reactions
+                       Order baseline hepatic chemistry blood tests (at least AST or ALT) for patients with specific conditions: Living with HIV, liver disorders, postpartum period (&lt3 months after delivery), regular alcohol use, injection drug use, or use of medications with known possible interactions. [Some clinicians prefer to obtain baseline tests on all adults]. Repeat measurements if: <span class="info-icon" data-tooltip="NOTE: 
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-center">i</span> baseline results are abnormal <span class="info-icon" data-tooltip="NOTE:
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-center">i</span> client is at high-risk for adverse reactions <span class="info-icon" data-tooltip="NOTE:
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-center">i</span> client has symptoms of adverse reactions
                     </td>
                 </tr>
                 <tr>
@@ -369,12 +393,18 @@
             </tbody>
         </table>
 
-        <table id="tab-content7" class="uk-table uk-table-small tab-content">
+        <table id="tab-content1" class="uk-table uk-table-small tab-content">
             <tbody>
                 <tr>
                     <th>Adverse Reactions</th>
                     <td>
-                        Orange discoloration of body fluids (secretions, tears, urine) , GI upset, drug interactions, hepatitis, thrombocytopenia, rash, fever, influenza-like symptoms, hypersensitivity reaction* Many drug-drug interactions
+                        Orange discoloration of body fluids (secretions, tears, urine) , GI upset, drug interactions, hepatitis, thrombocytopenia, rash, fever, influenza-like symptoms, hypersensitivity reaction <span class="info-icon" data-tooltip="NOTE: 
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-left">i</span> Many drug-drug interactions
                     </td>
                 </tr>
                 <tr>
@@ -383,7 +413,21 @@
                     </th>
                     <td>
                         Complete blood count (CBC), platelets and liver function tests.
-                        Repeat measurements if: * baseline results are abnormal * client has symptoms of adverse reactions  Prior to starting RIF or RPT: need to carefully review all medications being taken by the patient with LTBI and ensure there is no contraindication to the use of that medication and RIF, RBT or RPT.
+                        Repeat measurements if: <span class="info-icon" data-tooltip="NOTE:
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis.
+Content
+">i</span> baseline results are abnormal <span class="info-icon" data-tooltip="NOTE:
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-right">i</span> client has symptoms of adverse reactions  Prior to starting RIF or RPT: need to carefully review all medications being taken by the patient with LTBI and ensure there is no contraindication to the use of that medication and RIF, RBT or RPT.
                     </td>
                 </tr>
                 <tr>
@@ -396,7 +440,7 @@
             </tbody>
         </table>
 
-        <table id="tab-content8" class="uk-table uk-table-small tab-content">
+        <table id="tab-content2" class="uk-table uk-table-small tab-content">
             <tbody>
                 <tr>
                     <th>Adverse Reactions</th>
@@ -405,7 +449,19 @@
                 <tr>
                     <th>Monitoring</th>
                     <td>Complete blood count (CBC), platelets and liver function tests.
-                        Repeat measurements if: * baseline results are abnormal * client has symptoms of adverse reactions  Prior to starting RIF or RPT: need to carefully review all medications being taken by the patient with LTBI and ensure there is no contraindication to the use of that medication and RIF or RPT.</td>
+                        Repeat measurements if: <span class="info-icon" data-tooltip="NOTE: 
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-center-center">i</span> baseline results are abnormal <span class="info-icon" data-tooltip="NOTE: 
+
+Hypersensitivity reaction to rifamycins (rifampin, rifabutin, or rifapentine): reactions may include a flu-like syndrome (e.g. fever, chills, headaches, dizziness, musculoskeletal pain), thrombocytopenia, shortness of breath or other signs and symptoms including wheezing, acute bronchospasm, urticaria, petechiae, purpura, pruritus, conjunctivitis, angioedema, hypotension or shock.
+If moderate to severe reaction (e.g. thrombocytopenia, hypotension), hospitalization or life-threatening event: Discontinue treatment.
+If mild reaction (e.g. rash, dizziness, fever): Continue to monitor patient closely with a low threshold for discontinuing treatment.
+A flu-like syndrome appears to be the most common side effect profile leading to discontinuation of the 3HP regimen.
+Rifabutin can rarely cause uveitis." data-tooltip-position="tooltip-bottom-center">i</span> client has symptoms of adverse reactions  Prior to starting RIF or RPT: need to carefully review all medications being taken by the patient with LTBI and ensure there is no contraindication to the use of that medication and RIF or RPT.</td>
                 </tr>
                 <tr>
                     <th>Comments</th>
@@ -425,4 +481,57 @@
 <script src="../assets/uikit.js" type="text/javascript"></script>
 <script src="../assets/uikit-icons.js" type="text/javascript"></script>
 <script src="../assets/main.js" type="text/javascript"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tooltips = document.querySelectorAll(".info-icon");
+
+    document.addEventListener("click", function (event) {
+    if (!event.target.closest(".info-icon")) {
+        document
+        .querySelectorAll(".info-icon.active")
+        .forEach((activeIcon) => {
+            activeIcon.classList.remove("active");
+        });
+    }
+    });
+
+    tooltips.forEach(function (icon) {
+    let tooltip = icon.querySelector(".tooltip");
+    if (!tooltip) {
+        tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent =
+        icon.getAttribute("data-tooltip") || "Additional information";
+
+        // Get positioning class from data attribute
+        const positionClass =
+        icon.getAttribute("data-tooltip-position") || "tooltip-center";
+        tooltip.classList.add(positionClass);
+
+        icon.appendChild(tooltip);
+    }
+
+    let isTooltipVisible = false;
+
+    icon.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        document
+        .querySelectorAll(".info-icon.active")
+        .forEach((activeIcon) => {
+            if (activeIcon !== icon) {
+            activeIcon.classList.remove("active");
+            const otherTooltip = activeIcon.querySelector(".tooltip");
+            if (otherTooltip) otherTooltip.style.display = "none";
+            }
+        });
+
+        isTooltipVisible = !this.classList.contains("active");
+        this.classList.toggle("active");
+        tooltip.style.display = isTooltipVisible ? "block" : "none";
+    });
+    });
+});
+
+</script>
 </html>
