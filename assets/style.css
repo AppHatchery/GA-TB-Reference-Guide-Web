@@ -405,48 +405,7 @@ hr {
 .uk-table-small .uk-table-link > a {
   padding: 0.625rem 0.75rem;
 }
-/* Responsive table
- ========================================================================== */
-/* Phone landscape and smaller */
-@media (max-width: 959px) {
-  .uk-table-responsive,
-  .uk-table-responsive tbody,
-  .uk-table-responsive th,
-  .uk-table-responsive td,
-  .uk-table-responsive tr {
-    display: block;
-  }
-  .uk-table-responsive thead {
-    display: none;
-  }
-  .uk-table-responsive th,
-  .uk-table-responsive td {
-    width: auto !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    overflow: visible !important;
-    white-space: normal !important;
-  }
-  .uk-table-responsive th:not(:first-child):not(.uk-table-link),
-  .uk-table-responsive td:not(:first-child):not(.uk-table-link),
-  .uk-table-responsive .uk-table-link:not(:first-child) > a {
-    padding-top: 5px !important;
-  }
-  .uk-table-responsive th:not(:last-child):not(.uk-table-link),
-  .uk-table-responsive td:not(:last-child):not(.uk-table-link),
-  .uk-table-responsive .uk-table-link:not(:last-child) > a {
-    padding-bottom: 5px !important;
-  }
-  .uk-table-justify.uk-table-responsive th,
-  .uk-table-justify.uk-table-responsive td {
-    padding-left: 0;
-    padding-right: 0;
-  }
 
-  .uk-tabs-container .tabs {
-    justify-content: center !important; /* Center tabs on small screens */
-  }
-}
 .uk-table tbody tr {
   transition: background-color 0.1s linear;
 }
@@ -543,6 +502,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* justify-items: center; */
   flex-wrap: wrap;
   align-items: stretch;
   align-content: start;
@@ -609,7 +569,7 @@ a {
 }
 
 .highlight {
-  color: var(--active-tab-color);
+  color: var(--primary-color);
 }
 
 th,
@@ -740,4 +700,167 @@ h3.highlight {
 .item.active {
   max-height: 5000px;
   transition: max-height 800ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.with-info-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.info-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: serif;
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 0rem;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  background-color: var(--primary-color);
+  font-weight: normal;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  /* font-size: 0.9em; */
+  line-height: 1.4;
+  bottom: 100%;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  white-space: normal;
+  word-wrap: break-word;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: max-content;
+  max-width: calc(100% + 200px);
+  z-index: 5000 !important;
+}
+
+/* Tooltip positioning variants */
+.tooltip-right {
+  left: 0px;
+}
+
+.tooltip-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-left {
+  right: 0px;
+  left: auto;
+}
+
+.tooltip-bottom-center {
+  top: 100%;
+  bottom: auto;
+  left: auto;
+  transform: translateX(-50%);
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.tooltip-center-center {
+  bottom: -500px;
+  left: 30%;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+/* Tooltip arrow */
+/* .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--primary-color) transparent transparent transparent;
+} */
+
+/* Show tooltip when active */
+.info-icon.active .tooltip {
+  visibility: visible;
+  opacity: 1;
+  overflow: scroll;
+}
+
+/* Responsive table
+ ========================================================================== */
+/* Phone landscape and smaller */
+@media (max-width: 959px) {
+  .uk-table-responsive,
+  .uk-table-responsive tbody,
+  .uk-table-responsive th,
+  .uk-table-responsive td,
+  .uk-table-responsive tr {
+    display: block;
+  }
+  .uk-table-responsive thead {
+    display: none;
+  }
+  .uk-table-responsive th,
+  .uk-table-responsive td {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+  .uk-table-responsive th:not(:first-child):not(.uk-table-link),
+  .uk-table-responsive td:not(:first-child):not(.uk-table-link),
+  .uk-table-responsive .uk-table-link:not(:first-child) > a {
+    padding-top: 5px !important;
+  }
+  .uk-table-responsive th:not(:last-child):not(.uk-table-link),
+  .uk-table-responsive td:not(:last-child):not(.uk-table-link),
+  .uk-table-responsive .uk-table-link:not(:last-child) > a {
+    padding-bottom: 5px !important;
+  }
+  .uk-table-justify.uk-table-responsive th,
+  .uk-table-justify.uk-table-responsive td {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .uk-tabs-container .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    width: 100%;
+  }
+
+  .tab,
+  .tab-button {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .uk-tabs-container .tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .uk-tabs-container .tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
