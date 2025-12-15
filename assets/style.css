@@ -436,6 +436,9 @@ th.uk-text-truncate,
 td.uk-text-truncate {
   max-width: 0;
 }
+.uk-text-wrap {
+  white-space: wrap;
+}
 
 /* End of import from UIkit.css file */
 
