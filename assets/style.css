@@ -867,3 +867,11 @@ h3.highlight {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Nudge only the long AAP isoniazid tooltip in LTBI table slightly right
+   so its text is not cut off, without affecting other tooltips. */
+#table_5_dosages_for_recommended_lbti_treatment_regimens
+  .info-icon[data-tooltip*="American Academy of Pediatrics recommends an isoniazid dosage of 10 - 15 mg/kg"]
+  .tooltip {
+  right: -30px; /* move popup 30px to the right */
+}
